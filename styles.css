@@ -1,0 +1,61 @@
+body{
+  font-family: arial,Sans-Serif;
+  text-align:center;
+  padding:30px;
+  background-color: grey;
+}
+section{
+  margin: 24px 0;
+  padding:15px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  background:lightGrey;
+}
+button{
+  padding:10px 15px;
+  margin:10px;
+  font-size:16px;
+  cursor:pointer;
+  border:none;
+  border-radius:8px;
+  background:#007bff;
+  color:white;
+}
+button:hover{
+  background: #0056b3;
+}
+p{
+ font-size:18px;
+ margin:10px;
+}
+img{
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  box-shadow:0 4px 10px (0,0,0,0.2);
+}
+/*imagens carrossel*/
+.slider{
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  align-content:center;
+  margin:auto;
+}
+.slides{
+  align-content: center;
+  display: flex;
+  width: max-content;
+  transition: transform 1s ease-in-out;
+}
+.slides img{
+  width:400px;
+  height:auto;
+  object-fit:cover;
+}
+@media (max-width: 600px){
+  .slider{
+    width:400px;
+    height:auto;
+  }
+}
